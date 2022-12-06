@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  process.env.REACT_APP_API_URL ||
+  `${process.env.REACT_APP_API_URL}/api/goals/` ||
   "https://nervous-windbreaker-bass.cyclic.app/api/goals/";
 
 // Create new goal
