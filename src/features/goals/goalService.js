@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "https://nervous-windbreaker-bass.cyclic.app/api/goals/";
+const API_URL =
+  process.env.REACT_APP_API_URL ||
+  "https://nervous-windbreaker-bass.cyclic.app/api/goals/";
 
 // Create new goal
 const createGoal = async (goalData, token) => {
